@@ -7,7 +7,7 @@
             "request": "launch",
             // "program": "${workspaceRoot}/app.js",
             // "program": "${workspaceRoot}/async/auto/mix.js",
-            "program": "${workspaceRoot}/callback/cb.js",
+            "program": "${workspaceRoot}/waterfall/process.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",

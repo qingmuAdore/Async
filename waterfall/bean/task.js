@@ -1,5 +1,5 @@
 function task(data, cb) {
-    console.log('task ' + data + ' finished! ' + 'run next task');
+    console.log('data: ' + data + '! ' + 'run task');
     setTimeout(function () {
         cb(null, 'current task');
     }, 120);
@@ -11,10 +11,17 @@ function done() {
 }
 
 //task 执行
-task.apply(null, [null].concat([done]));
-
+task.apply(null, ['apply'].concat([done]));
 /**
-task null finished! run next task
+data: apply! run task
+null
+current task
+ */
+
+
+// task.call(null, 'call', done);
+/**
+data: call! run task
 null
 current task
  */

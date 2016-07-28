@@ -8,6 +8,7 @@
             // "program": "${workspaceRoot}/app.js",
             // "program": "${workspaceRoot}/async/auto/mix.js",
             "program": "${workspaceRoot}/waterfall/process.js",
+            // "program": "${workspaceRoot}/waterfall/bean/once.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",

@@ -2,6 +2,8 @@
  * waterfall
  * 
  * @顺序执行
+ * @err 出错中断后续
+ * @res 最后执行function的结果
  */
 var async = require('async');
 

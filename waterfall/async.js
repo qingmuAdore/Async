@@ -71,11 +71,13 @@ function waterfall(tasks, cb) {
     function nextTask(args) {
         // complete 
         if (taskIndex === tasks.length) {
+            // callback
             return cb.apply(null, [null].concat(args));
         }
         var taskCallback = onlyOnce(rest(function (err, args) {
             // err interrupt
             if (err) {
+                //callback
                 return cb.apply(null, [err].concat(args));
             }
             //next task
@@ -83,9 +85,8 @@ function waterfall(tasks, cb) {
         }));
         args.push(taskCallback);
         var task = tasks[taskIndex++];
-
         //run 
-        task.apply(null, args);
+        task.apply(null, args);  
     }
     nextTask([]);
 }

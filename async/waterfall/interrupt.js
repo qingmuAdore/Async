@@ -40,7 +40,7 @@ async.waterfall([
     }],
     function (err, res) {
         if (err) {
-            console.log("err: ", err, "msg: ", res);
+            console.log("err: ", err, "  msg: ", res);
         }
         else {
             console.log("Mac ", res, " is open, all action done");
@@ -51,6 +51,6 @@ async.waterfall([
 
 Water Fall Run
 drink  Cola  finish, I will play game
-err:  busy msg:  not free time
+err:  busy   msg:  not free time
 
 */

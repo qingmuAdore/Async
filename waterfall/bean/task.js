@@ -11,7 +11,7 @@ function done() {
 }
 
 //task 执行
-task.apply(null, ['apply'].concat([done]));
+task.apply(null, ['apply'].concat([done]));  
 /**
 data: apply! run task
 null
